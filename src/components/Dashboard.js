@@ -216,6 +216,8 @@ const Dashboard = () => {
   const fetchDashboardData = useCallback(async () => {
     try {
       const token = localStorage.getItem('authToken');
+      console.log(localStorage.getItem('authToken')); 
+
       if (!token) {
         navigate('/');
         return;
@@ -287,7 +289,7 @@ const Dashboard = () => {
   return (
     <DashboardContainer>
       <Sidebar>
-        <Header showLogo showName={false} /> {/* Logo in Sidebar */}
+        <Header showLogo showName={false} /> 
         <NavItems>
           <NavItem active>Dashboard</NavItem>
           <NavItem>Wallet</NavItem>
@@ -330,7 +332,7 @@ const Dashboard = () => {
       <h3>Payments</h3>
       <ActionButtons>
       <Button onClick={() => openFundAccountModal(accounts.length > 0 ? accounts[0].accountNumber : null)}>Fund Account</Button>
-      <Button onClick={() => navigate('/transfer')}>Transfer</Button>
+      <Button onClick={() => navigate('/payment')}>Trasnfer</Button>
       </ActionButtons>
     </PaymentWidget>
 

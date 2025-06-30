@@ -11,7 +11,7 @@ const HeaderContainer = styled.header`
   color: ${(props) => props.theme.colors.secondary};
   width: 100%;
   box-sizing: border-box;
-
+  position: relative;
   @media (max-width: 768px) {
     flex-direction: column; 
     text-align: center;
@@ -36,7 +36,7 @@ const BankName = styled.h1`
   color: ${(props) => props.theme.colors.secondary};
 
   @media (max-width: 768px) {
-    font-size: 20px; /* Adjust font size for small screens */
+    font-size: 20px; 
   }
 `;
 
