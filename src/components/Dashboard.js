@@ -2,7 +2,7 @@ import React, { useEffect, useCallback, useState } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import Header from './Header'; // Reusable header component
+import Header from './Header'; 
 
 // Styling
 const DashboardContainer = styled.div`
